@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+  .container{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-direction: row;
+    height: 100vh;
+    background-color: black;
+
+    /*Alinea al main axis*/
+    justify-content: center;
+
+    /*Alinea al coss axis*/
+    align-items: baseline;
+    
+  }
