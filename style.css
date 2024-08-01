@@ -1,19 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
   .container{
-    display: flex;
-    width: 100%;
-    gap: 20px;
-    flex-direction: row;
-    height: 100vh;
-    background-color: black;
+
 
     /*Alinea al main axis*/
-    justify-content: center;
+     /*justify-content: center;*/
 
     /*Alinea al coss axis*/
-    align-items: baseline;
-    
+   /* align-items: baseline;*/
+   font-family: "Anton", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+    padding: 24px;
+    color: white;
+    background-color: black;
   }
+
+
+  .username{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start
+  }
+
+  .username p{
+    font-size: 32px;
+    color: rgb(245, 137, 50);
+    font-weight: bold;
+  }
+
+  .logo img{
+    width: 180px;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    margin: 14px;
+  }
+ 
+  .battle-container{
+    display: flex;
+  }
+
+  .card-character{
+    border: 1px solid rgba(240,144,34,0.75);;
+    width:  50%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 5px 0px rgba(240,144,34,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(240,144,34,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(240,144,34,0.75);
+
+  }
+  .card-character img{
+    width: auto;
+    height: 240px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.5s;
+
+  }
+
+  .first img:hover{
+    height:280px ;
+    transition: 0.5s;
+  }
+
+.battle-column{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+}
+.battle-column h4{
+  font-size: 74px;
+  color:rgba(240,144,34,0.75);
+}
+
+.info-card-1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 8px;
+}
+
+.info-card-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 8px;
+}
+
+.info-card-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-card-4{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8px;
+
+}
+.minutes{
+  display: flex;
+  margin: 34px;
+  justify-content: flex-end;
+}
